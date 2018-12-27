@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="automation.test.myaccoutant.view.SignUpForm">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/maven_pro_regular"
+            android:text="Second step financial information"
+            android:textColor="#444444"
+            android:textSize="18dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="select currency"
+            android:inputType="text"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Monthly salary"
+            android:inputType="textEmailAddress"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Fixed charge"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="rent amount"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="Bill marge (water, electricity,gaz, phone, etc)"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Bill marge (water, electricity,gaz, phone, etc)"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Bill marge (water, electricity, phone, etc)"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Bill marge (water, electricity, phone, etc)"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Bill marge (water, electricity, phone, etc)"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#00000000"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Bill marge (water, electricity, phone, etc)"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#d3d3d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#b9b9b9" />
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/signIn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:src="@drawable/circle"
+                android:tint="#d11e48" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/whitearrow"/>
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
