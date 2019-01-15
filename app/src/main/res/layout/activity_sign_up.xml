@@ -25,7 +25,7 @@ tools:context="automation.test.myaccoutant.view.SignUp">
         android:layout_gravity="center"
         android:layout_marginTop="28dp"
         android:fontFamily="@font/maven_pro_regular"
-        android:text="First step general information"
+        android:text="@string/appbar_scrolling_view_behavior"
         android:textColor="#444444"
         android:textSize="18dp" />
     <EditText
@@ -85,7 +85,7 @@ tools:context="automation.test.myaccoutant.view.SignUp">
         android:layout_marginTop="15dp"
         android:background="#00000000"
         android:fontFamily="@font/roboto_light"
-        android:hint="Confirm Password"
+        android:hint="@string/appbar_scrolling_view_behavior"
         android:inputType="numberPassword"
         android:maxLength="6"
         android:textColor="#d3d3d3"

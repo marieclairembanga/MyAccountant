@@ -8,10 +8,10 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="action_settings">Paramètres</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="Hello">Bienvenu dans MyAccountant</string>
-    <string name="password">mot de passe oublié?</string>
-    <string name="signUp">creer un nouveau compte</string>
-    <string name="step1">Etape 1: Informations de connexion</string>
-    <string name="step2">Etape 2: Informations financières</string>
-    <string name="incomes">revenues mensuelles</string>
+    <string name="Hello">Welcome to MyAccountant</string>
+    <string name="password">forgot your password?</string>
+    <string name="signUp">create a new account</string>
+    <string name="step1">Step 1: Personal nformations </string>
+    <string name="step2">Etape 2: Financial informations </string>
+    <string name="incomes">montly incomes</string>
 </resources>
