@@ -20,31 +20,50 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
  
   require "dbconnect.php";
   
-    $data = file_get_contents("php://input");
+   /* $sql = "SELECT id FROM users where login = 'toto' ";
+      $result = mysqli_query($con,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);      
+      $count = mysqli_num_rows($result);		
+      if($count == 0) {
+	      $sqli = "INSERT INTO users (login, password, pays, profession, revenu_mens, plafond )
+          VALUES ('toto','password','pays','profession','20000','1000')";
+          if ($con->query($sqli) == TRUE) {
+	      $response= "Registration successfull";
+   
+          } else {
+            $response= "Error: " . $sqli . "<br>" . $con->error;
+            }
+    
+      }else {
+      
+		 $response= "Already exist";
+      }*/
+  
+   $data = file_get_contents("php://input");
     if (isset($data)) {
         $request = json_decode($data);
-        $username = $request->username;
+        $login = $request->login;
 		$password = $request->password;
  
 	}
 
-$username = stripslashes($username);
+$login = stripslashes($login);
 $password = stripslashes($password);
 
       
-	  $sql = "SELECT id FROM patients WHERE nom = '$username' and password = '$password' ";
+	  $sql = "SELECT id FROM users WHERE login = '$login' and password = '$password' ";
       $result = mysqli_query($con,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       //$active = $row['active'];
       
       $count = mysqli_num_rows($result);
       
-      // If result matched $myusername and $mypassword, table row must be 1 row
+      // If result matched $mylogin and $mypassword, table row must be 1 row
 		
       if($count >0) {
-     $response= "Your Login success";
+     $response= "You've Login succesfuly";
       }else {
-    $response= "Your Login Email or Password is invalid" . $sql . "<br>" . $db->error;
+    $response= "Your Login or Password is invalid" . $sql . "<br>" . $con->error;
 		
       }
    
@@ -52,4 +71,5 @@ $password = stripslashes($password);
 
 	 
 	echo json_encode( $response); 
+
 ?>

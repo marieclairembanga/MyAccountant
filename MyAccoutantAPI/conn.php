@@ -1,6 +1,6 @@
 <?php
   try {
-      $strConnection= 'mysql:host=localhost; dbname=sant-alert';
+      $strConnection= 'mysql:host=localhost; dbname=MyAccountant';
       $pdo = new PDO ($strConnection, 'root', '');
   }
   catch (PDOException $e) {

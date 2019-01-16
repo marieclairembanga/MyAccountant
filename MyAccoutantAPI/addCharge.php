@@ -22,39 +22,29 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
 $data = file_get_contents("php://input");
     if (isset($data)) {
         $request = json_decode($data);
-		$login = $request->login;
-		$password = $request->password;
-		$pays = $request->pays;
-		$profession= $request->profession;
-		$revenus_mesuels = $request->revenus_mesuels;
-        $plafond = $request->plafond;
+		$intitule = $request->intitule;
+		$type = $request->type;
+		$date_paie = $request->date_paie;
+		$montant= $request->montant;
+		$user_id= $request->user_id;
         
 	}
 	
-        $login = stripslashes($login);
-		$password =stripslashes($password);
-		$pays =stripslashes($pays);
-		$profession= stripslashes($profession);
-		$revenus_mesuels = stripslashes($revenus_mesuels);
-        $plafond = stripslashes($plafond);
-  $sql = "SELECT id FROM users login = '$login' ";
-      $result = mysqli_query($con,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);      
-      $count = mysqli_num_rows($result);		
-      if($count == 0) {
-	      $sql = "INSERT INTO users (login, password, pays, profession, revenu_mens, plafond )
-          VALUES ('$login','$password','$pays','$profession','$revenus_mesuels','$plafond')";
+        $intitule = stripslashes($intitule);
+		$type =stripslashes($type);
+		$date_paie =stripslashes($date_paie);
+		$montant= stripslashes($montant);
+		$user_id= stripslashes($user_id);
+  
+	      $sql = "INSERT INTO charges (intitulé, type, date_paie, montant, user_id )
+          VALUES ('$intitule','$type','$date_paie','$montant','$user_id')";
           if ($con->query($sqli) == TRUE) {
-	      $response= "Registration successfull";
+	      $response= "insertion successfull";
    
           } else {
             $response= "Error: " . $sqli . "<br>" . $con->error;
             }
-    
-      }else {
-      
-		 $response= "Already exist";
-      }
+   
  	 
 	echo json_encode( $response); 
 ?>
