@@ -31,7 +31,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.Tab1" />
         <activity android:name=".view.Tab2" />
-        <activity android:name=".view.Tab3"></activity>
+        <activity android:name=".view.Tab3" />
+        <activity android:name=".view.SettingsActivity" />
+        <activity
+            android:name=".view.AboutActivity"
+            android:label="@string/about" />
+        <activity android:name=".view.NotifSetActivity"></activity>
     </application>
 
 </manifest>
